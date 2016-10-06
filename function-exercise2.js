@@ -30,8 +30,8 @@ function maxOfThree(x,y,z){
 // ---------------------
 
 function isVowel(char){
-	var vowel = ["a","e","i","o","u",];
-	for(i=0; i++; i<=vowel.length){
+	var vowel = ["a","e","i","o","u","A","E","I","O","U"];
+	for(i=0; i<=vowel.length; i++){
 		if(vowel[i] = char){
 			return true;
 		}
