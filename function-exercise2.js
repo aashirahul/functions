@@ -4,7 +4,7 @@
 
 function max(x,y){
 if(x>y){
-	return x;
+		return x;
 	}else{
 		return y;
 	}
@@ -15,10 +15,10 @@ if(x>y){
 // ---------------------
 
 function maxOfThree(x,y,z){
-	if(x>y&&x>z){
+	if(x>=y&&x>=z){
 		return x;
 	}
-	if (y>x&&y>z){
+	if (y>=x&&y>=z){
 		return y;
 	}else{
 		return z;
@@ -44,9 +44,7 @@ return false;
 // Write a function translate() that will translate a text into "Rovarspraket". That is, double every consonant and place an occurrence of "o" in between. For example, translate("this is fun") should return the string "tothohisos isos fofunon".
 // ---------------------
 
-function rovarspraket(phrase){
-    
-}
+
 
 
 // ---------------------
