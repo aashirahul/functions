@@ -46,10 +46,12 @@ Q1
 // the function should return `false`.
 	
 	var greaterThan = function(x,y){
+	var value1= true;
+	var value2= false;
 		if(y>x){
-			console.log(true);
+			return value1;
 	    }else{
-			console.log(false);
+			return value2;
 	 	}
   	 }
 
