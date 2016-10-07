@@ -18,13 +18,12 @@ var instructors = [
 
 // ---------------------------
 // 1. Find largest number
-    var largestNum = function(){
+    var largestNum = function(numbers){
     var count;
-    var number =[1,12,4,18,9,7,11,3,101,5,6];
-    var largest =number[0];
-    for(count=1; count<number.length; count++){
-        if(number[count]>largest){
-            largest=number[count];
+    var largest =numbers[0];
+    for(count=1; count<numbers.length; count++){
+        if(numbers[count]>largest){
+            largest=numbers[count];
         }
     }
     return largest;
@@ -36,9 +35,8 @@ var instructors = [
 // ---------------------------
 // 2. Find longest string
 
-	var longest = function(){
+	var longest = function(string){
     var count;
-    var string =["this","is","a","collection","of","words"];
     var word = string[0];
     for(count=1; count<string.length; count++){
         if(string[count].length>word.length){
@@ -54,9 +52,8 @@ var instructors = [
 // ---------------------------
 // 3. Find even numbers
     
-    var evenNum = function(){
+    var evenNum = function(numbers){
     var count;
-    var numbers = [1,12,4,18,9,7,11,3,101,5,6];
     var even =[];
     for(count=0; count<numbers.length; count++){
         if(numbers[count]%2===0){
@@ -71,9 +68,8 @@ var instructors = [
 
 // ---------------------------
 // 4. Find odd numbers
-    var oddNum = function(){
+    var oddNum = function(numbers){
     var count;
-    var numbers = [1,12,4,18,9,7,11,3,101,5,6];
     var odd =[];
     for(count=0; count<numbers.length; count++){
         if(numbers[count]%2!=0){
@@ -88,8 +84,7 @@ var instructors = [
 // ---------------------------
 // 5. Find words that contain `is`
 
-    var search = function(){
-    var strings = ['this','is','a','collection','of','words'];
+    var search = function(strings){
     var count;
     var i;
     var contains=[];
@@ -107,10 +102,8 @@ var instructors = [
 // ---------------------------
 // 6. Join Both Arrays Together
 // ---------------------------
-    var join = function(){
+    var join = function(numbers,strings){
     var count;
-    var numbers = [1,12,4,18,9,7,11,3,101,5,6];
-    var strings = ['this','is','a','collection','of','words'];
     for(count=0; count<numbers.length; count++){
             strings.push(numbers[count]);
         }
